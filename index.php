@@ -23,7 +23,10 @@
 
         </header>
         <section>
-
+            <div class="section-background">
+                <!-- Todo: change the link -->
+                <button class="button" type="button" onclick="">Réservez maintenant</button>
+            </div>
         </section>
 
     </body>
