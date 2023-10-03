@@ -18,7 +18,7 @@
             <div class="head"><H1>Figuiès</H1></div>
             <div class="head">
                 <a href="">langue</a>
-                <a href="">Login</a>
+                <a href="page/login.php">Login</a>
             </div>
 
         </header>
