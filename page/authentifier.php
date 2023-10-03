@@ -20,7 +20,7 @@ if (!$result) {
 
 if (mysqli_num_rows($result) == 1) {
 
-    echo "Connexion réussie !";
+    header("Location: ../index.php");
 
 } else {
 
