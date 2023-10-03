@@ -12,7 +12,7 @@ body {
     transition: transform .4s cubic-bezier(.25, .1, .25, 1);
 }
 
-#wrap{
+#wrap {
     transform: translate3d(-335px, 0, 0);
 }
 
@@ -23,7 +23,6 @@ label {
     display: block;
     margin-right: -30px;
 }
-
 
 
 a,
@@ -37,8 +36,8 @@ label {
     background: #f00;
     width: 360px;
     padding: 0 20px;
-    display:inline-block;
-    vertical-align:top;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .nav {
@@ -48,30 +47,52 @@ label {
 .main {
     padding: 25px;
     flex: 1;
-    display:inline-block;
+    display: inline-block;
 }
 
 p {
     max-width: 590px;
-    color:#306;
+    color: #306;
 }
 
-#menu{
-    display:none;
+#menu {
+    display: none;
 }
-#menu:checked ~ #wrap{
+
+#menu:checked ~ #wrap {
     transform: translate3d(0, 0, 0);
 }
 
-label>span{
-    display:none;
-}
-#menu:checked ~ #wrap label>span{
-    display:block;
-    font-size:48px;
-    line-height:48px;
+label > span {
+    display: none;
 }
 
-#menu:checked ~ #wrap label>svg{
-    display:none;
+#menu:checked ~ #wrap label > span {
+    display: block;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+#menu:checked ~ #wrap label > svg {
+    display: none;
+}
+
+.section {
+    height: 40vh;
+
+    .background {
+        height: 100vh;
+        background-image: url("images/background-image.jpg");
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .default-component {
+        background-color: blue;
+    }
+
+    .constrast-component {
+        background-color: aqua;
+    }
 }

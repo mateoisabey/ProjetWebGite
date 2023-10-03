@@ -46,8 +46,10 @@
         </nav>
 
     </header>
-    <section>
-
+    <section class="section">
+        <div class="section.background">
+            <p>ici le titre devrait s'afficher</p>
+        </div>
     </section>
 
 </body>
