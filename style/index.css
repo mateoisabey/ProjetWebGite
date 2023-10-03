@@ -68,7 +68,6 @@ label > span {
     display: none;
 }
 
-<<<<<<< HEAD
 .button {
     background-color: blue;
     color: white;
@@ -102,8 +101,6 @@ label > span {
     margin-left: 15px;
 }
 
-=======
->>>>>>> d2fff6fc14d940737488938ad28c94f5e85552a7
 #menu:checked ~ #wrap label > span {
     display: block;
     font-size: 48px;
@@ -114,7 +111,6 @@ label > span {
     display: none;
 }
 
-<<<<<<< HEAD
 .section-background {
     height: 100vh;
     background-size: 100% auto;
@@ -132,24 +128,4 @@ label > span {
 .section-constrast-component {
     height: 70vh;
     background-color: aqua;
-=======
-.section {
-    height: 40vh;
-
-    .background {
-        height: 100vh;
-        background-image: url("images/background-image.jpg");
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-
-    .default-component {
-        background-color: blue;
-    }
-
-    .constrast-component {
-        background-color: aqua;
-    }
->>>>>>> d2fff6fc14d940737488938ad28c94f5e85552a7
 }
