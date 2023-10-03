@@ -46,10 +46,16 @@
         </nav>
 
     </header>
+<<<<<<< HEAD
     <section>
         <div class="section-background">
             <!-- Todo: change the link -->
             <button class="button" type="button" onclick="">Réservez maintenant</button>
+=======
+    <section class="section">
+        <div class="section.background">
+            <p>ici le titre devrait s'afficher</p>
+>>>>>>> d2fff6fc14d940737488938ad28c94f5e85552a7
         </div>
     </section>
 
