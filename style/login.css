@@ -1,0 +1,58 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeedbe;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 20%;
+
+}
+
+/* Style pour le titre "Connexion" */
+h2 {
+    color: #c37857;
+    margin-top: 20px;
+}
+
+/* Style pour le formulaire de connexion */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Style pour les étiquettes des champs de saisie */
+label {
+    display: block;
+    color: #c37857;
+    margin-bottom: 5px;
+}
+
+/* Style pour les champs de saisie */
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style pour le bouton de soumission */
+input[type="submit"] {
+    background-color: #c37857;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style pour le bouton de soumission au survol */
+input[type="submit"]:hover {
+    background-color: #aa613f;
+}

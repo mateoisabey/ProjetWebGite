@@ -1,0 +1,76 @@
+<?php
+require("../php/connect.php");
+
+                        //récupération des variables
+                        $NomReg = $_POST['regime'];
+                        $NomR = $_POST['NomR'];
+                        $NomM1 = $_POST['NomM1'];
+                        $NomM2 = $_POST['NomM2'];
+                        $NomM3 = $_POST['NomM3'];
+                        $NomM4 = $_POST['NomM4'];
+                        $NomM5 = $_POST['NomM5'];
+                        $NomM6 = $_POST['NomM6'];
+                        $QuantM1 = $_POST['quantiteM1'];
+                        $QuantM2 = $_POST['quantiteM2'];
+                        $QuantM3 = $_POST['quantiteM3'];
+                        $QuantM4 = $_POST['quantiteM4'];
+                        $QuantM5 = $_POST['quantiteM5'];
+                        $QuantM6 = $_POST['quantiteM6'];
+                        $NomI1 = $_POST['NomI1'];
+                        $NomI2 = $_POST['NomI2'];
+                        $NomI3 = $_POST['NomI3'];
+                        $NomI4 = $_POST['NomI4'];
+                        $NomI5 = $_POST['NomI5'];
+                        $NomI6 = $_POST['NomI6'];
+                        $NomI7 = $_POST['NomI7'];
+                        $NomI8 = $_POST['NomI8'];
+                        $NomI9 = $_POST['NomI9'];
+                        $quantite1 = $_POST['quantite1'];
+                        $quantite2 = $_POST['quantite2'];
+                        $quantite3 = $_POST['quantite3'];
+                        $quantite4 = $_POST['quantite4'];
+                        $quantite5 = $_POST['quantite5'];
+                        $quantite6 = $_POST['quantite6'];
+                        $quantite7 = $_POST['quantite7'];
+                        $quantite8 = $_POST['quantite8'];
+                        $quantite9 = $_POST['quantite9'];
+                        $Desc = $_POST['Description'];
+                        $duree = $_POST['duree'];
+                        $diff = $_POST['difficulte'];
+
+                        $connexion = mysqli_connect(SERVEUR,NOM,PASSE);
+                        mysqli_set_charset($connexion, "utf8");
+                        mysqli_select_db($connexion,BASE);
+                        $requete1="insert into Recette (NomR, duree, difficulte, Description )
+                                  values ('$NomR', '$duree', $diff, '$Desc');";
+
+                        $resultat1 = mysqli_query($connexion,$requete1);
+                        if ($resultat1){
+                          echo "<br>la requête 1 a été effectuée.";}
+                        else {
+                          echo "la requête 1 n'a pas pu être effectuée
+                                pour la raison suivante:".mysqli_error($connexion); }
+
+                        $IDrec = mysqli_query($connexion,"select MAX(IDrec) AS id from Recette;");
+                        $IDrec = mysqli_fetch_object($IDrec) ;
+                        $IDrec = json_decode(json_encode($IDrec), true);
+                        if (!empty($NomM1) && !empty($QuantM1)) addMat($connexion, $NomM1, $QuantM1, $IDrec);
+                        if (!empty($NomM2) && !empty($QuantM2)) addMat($connexion, $NomM2, $QuantM2, $IDrec);
+                        if (!empty($NomM3) && !empty($QuantM3)) addMat($connexion, $NomM3, $QuantM3, $IDrec);
+                        if (!empty($NomM4) && !empty($QuantM4)) addMat($connexion, $NomM4, $QuantM4, $IDrec);
+                        if (!empty($NomM5) && !empty($QuantM5)) addMat($connexion, $NomM5, $QuantM5, $IDrec);
+                        if (!empty($NomM6) && !empty($QuantM6)) addMat($connexion, $NomM6, $QuantM6, $IDrec);
+
+                        if (!empty($NomI1) && !empty($quantite1)) addIng($connexion, $NomI1, $quantite1, $IDrec);
+                        if (!empty($NomI2) && !empty($quantite2)) addIng($connexion, $NomI2, $quantite2, $IDrec);
+                        if (!empty($NomI3) && !empty($quantite3)) addIng($connexion, $NomI3, $quantite3, $IDrec);
+                        if (!empty($NomI4) && !empty($quantite4)) addIng($connexion, $NomI4, $quantite4, $IDrec);
+                        if (!empty($NomI5) && !empty($quantite5)) addIng($connexion, $NomI5, $quantite5, $IDrec);
+                        if (!empty($NomI6) && !empty($quantite6)) addIng($connexion, $NomI6, $quantite6, $IDrec);
+                        if (!empty($NomI7) && !empty($quantite7)) addIng($connexion, $NomI7, $quantite7, $IDrec);
+                        if (!empty($NomI8) && !empty($quantite8)) addIng($connexion, $NomI8, $quantite8, $IDrec);
+                        if (!empty($NomI9) && !empty($quantite9)) addIng($connexion, $NomI9, $quantite9, $IDrec);
+
+
+
+                      ?>
