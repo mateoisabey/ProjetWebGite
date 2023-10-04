@@ -1,23 +1,12 @@
-.titre {
-    display: inline;
-    margin-left: 100px;
-}
+
 
 body {
     margin: 0;
     overflow-x: hidden;
+
 }
 
 
-.head {
-    display: inline-block;
-    margin-left: 200px;
-}
-
-
-.head a {
-    display: inline-block;
-}
 
 .button {
     background-color: blue;
@@ -61,13 +50,51 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-.section-default-component {
-    height: 70vh;
-    background-color: blue;
+.section-background-Color1 {
+    height: 80vh;
+    background-size: 100% auto;
+    background-color: rgba(195, 120, 87, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-background-Color2 {
+    height: 80vh;
+    background-size: 100% auto;
+    background-color: rgba(238, 237, 190, 0.56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-constrast-component {
-    height: 70vh;
-    background-color: aqua;
+/* Style pour le conteneur du header */
+.titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #734444;;
+    color: #fff;
+    padding: 10px;
+}
+
+.head:first-child {
+    margin-right: auto;
+    display: flex; /* Ajouter une disposition flex */
+    align-items: center; /* Centrer verticalement le contenu */
+}
+
+/* Style pour les liens dans la deuxième div */
+.head a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px; /* Ajoute une marge entre les liens */
+    display: inline-block;
+}
+
+h1 {
+    margin-left: 10%;
+    margin-top: 0.8em;
+    margin-bottom: 0;/* Supprimer les marges par défaut du titre */
+    text-align: center; /* Centrer le texte horizontalement */
+    flex-grow: 1; /* Permet au titre de s'étendre pour remplir l'espace restant */
 }

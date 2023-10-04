@@ -1,5 +1,6 @@
 <?php
 require("../php/connect.php");
+session_start();
 
 $connexion = mysqli_connect(SERVEUR, NOM, PASSE, BASE);
 
@@ -19,8 +20,11 @@ if (!$result) {
 }
 
 if (mysqli_num_rows($result) == 1) {
+    $_SESSION["loggedin"] = true;
+    $_SESSION["username"] = $username;
 
-    header("Location: ../index.php");
+    echo($_SESSION["loggedin"]);
+    header("Location: ../page/admin.php");
 
 } else {
 
