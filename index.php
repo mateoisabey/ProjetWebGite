@@ -126,12 +126,28 @@
                         </div>
                         <div id="equipment-show" class="toggle-collapse">
                             <div class="equipment-details-list">
-                                <p>ded</p>
-                                <p>ded</p>
-                                <p>ded</p>
-                                <p>ded</p>
-                                <p>ded</p>
-                                <p>ded</p>
+                                <p>- Abris pour vélo ou VTT</p>
+                                <p>- Barbecue</p>
+                                <p>- Cuisine équipée</p>
+                                <p>- Habitation indépendante</p>
+                                <p>- Jardin</p>
+                                <p>- Local matériel fermé</p>
+                                <p>- Parking privé</p>
+                                <p>- Salon de jardin</p>
+                                <p>- Terrain non clos</p>
+                                <p>- Terrasse</p>
+                                <p>- Animaux acceptés (Payant)</p>
+                                <p>- Location de linge (Payant)</p>
+                                <p>- Ménage (Payant)</p>
+                                <p>- Climatisation</p>
+                                <p>- Cheminée</p>
+                                <p>- Lave vaisselle</p>
+                                <p>- Sèche cheveux</p>
+                                <p>- Télévision</p>
+                                <p>- Escalade à 5km</p>
+                                <p>- VTT / Vélo</p>
+                                <p>- Musée à 3km</p>
+                                <p>- Randonnée pédestre</p>
                             </div>
                         </div>
                     </div>
