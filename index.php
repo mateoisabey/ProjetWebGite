@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Figuiès</title>
     <link rel="stylesheet" href="style/index.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="./javascript/index.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 </head>
     <body>
@@ -36,12 +38,104 @@
             <div class="section-background">
                 <!-- Todo: change the link -->
                 <button class="button" type="button" onclick="">Réservez maintenant</button>
+                <p>À partir de 550€ / semaine</p>
             </div>
             <div class="section-background-Color1">
-
+                <div class="description">
+                    <p>Notre maison en pierre, située sur les hauteurs, entre vignes, falaises et le causse vous séduira par sa vue magnifique et son environnement agréable.</p>
+                    <div class="diamond-background">
+                        <img id="diamond-button-description" class="diamond" src="./images/icon-arrow-down.svg" alt="Découvrir la description">
+                    </div>
+                    <div id="description-show" class="toggle-collapse">
+                        <p>
+                            A 20 mn de Rodez, 10 mn de Marcillac et 30 mn de Conques, vous êtes <strong>idéalement situés pour
+                                visiter </strong> quelques un des sites naturels ou culturels remarquables de l'Aveyron.
+                        </p>
+                        <p>
+                            Figuies est un hameau charmant, que l'on visite à pied. Une belle balade par un chemin, vous
+                            mènera de la cascade de la Roque, à celles de Salles-la source, en profitant de nombreux
+                            points de vue sur le paysage. On adore aussi le sentier à flanc de versant avec des passages
+                            en encorbellement creusé dans la roche ! Il nous fait pénétrer dans le paysage des falaises
+                            calcaires avec de beaux points de vue sur la vallée. Vous êtes sur le GR 62 de Rodez à
+                            Conques.
+                        </p>
+                        <p>
+                            Le gîte de Figuies, d'une superficie de 75 m² sur deux niveaux, a été <strong> entièrement
+                            rénové en 2021 </strong>. Une agréable décoration allie un style contemporain et des
+                            matériaux naturels comme le bois et le rotin.
+                        </p>
+                        <p>
+                            Il se compose, au rez-de-chaussée d'une pièce lumineuse ouverte sur le paysage grâce à une
+                            grande baie vitrée. De 35 m² et climatisée, cet espace offre une <strong>cuisine moderne
+                            bien équipée</strong>, un séjour et un coin salon chaleureux et cosys.
+                        </p>
+                        <p>
+                            La <strong>terrasse plein sud</strong>, offre une <strong>vue imprenable sur la vallée
+                            </strong> que l'on peut contempler en prenant ses repas. Vous pourrez même admirer de
+                            superbes couchers du soleil.
+                        </p>
+                        <p>
+                            A l'étage, vous disposerez de <strong>deux chambres mansardées</strong> et confortables.
+                            L'une avec un lit en 140/190 et l'autre avec deux lits en 90/190. Vous y trouverez aussi la
+                            salle de bain avec son WC.
+                        </p>
+                        <p>
+                            Le <strong>jardin</strong>, très agréable, est non clos. Pourvu d'un bar extérieur, d'un
+                            barbecue, d'un évier et de mobilier de jardin, vous pourrez y prendre vos repas ou vous
+                            reposer à l'ombre de la glycine. Un WC et une douche complètent l'équipement.
+                        </p>
+                        <p>
+                            Pour des vacances authentiques et au grand air, dans un <strong>lieu paisible à l'écart de
+                            la circulation</strong>, vous vous sentirez chez vous tout en étant dépaysé.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="section-background-Color2">
-
+                <div class="section-equipment">
+                    <div>
+                        <h2 class="titre">Capacité</h2>
+                        <div class="equipment-details">
+                            <p><strong>Personne</strong>: 4</p>
+                            <p><strong>Chambre</strong>: 2</p>
+                            <p><strong>Personne (maximum)</strong>: 4</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="titre">Equipements</h2>
+                        <div class="equipment-details">
+                            <div class="equipment-logo-and-text">
+                                <img class="little-logo" src="./images/icon-animaux.png" alt="logo animaux">
+                                <p>Animaux acceptés</p>
+                            </div>
+                            <div class="equipment-logo-and-text">
+                                <img class="little-logo" src="./images/icon-parking.png" alt="logo parking">
+                                <p>Parking</p>
+                            </div>
+                            <div class="equipment-logo-and-text">
+                                <img class="little-logo" src="./images/icon-terrasse.png" alt="logo terrasse">
+                                <p>Terrasses</p>
+                            </div>
+                            <div class="equipment-logo-and-text">
+                                <img class="little-logo" src="./images/icon-tv.png" alt="logo television">
+                                <p>Télévision</p>
+                            </div>
+                        </div>
+                        <div class="diamond-background">
+                            <img id="diamond-button-equipment" class="diamond" src="./images/icon-arrow-down.svg" alt="Découvrir la description">
+                        </div>
+                        <div id="equipment-show" class="toggle-collapse">
+                            <div class="equipment-details-list">
+                                <p>ded</p>
+                                <p>ded</p>
+                                <p>ded</p>
+                                <p>ded</p>
+                                <p>ded</p>
+                                <p>ded</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="section-background-Color1">
                 <div id="map" style="width: 600px; height: 400px;"></div>
