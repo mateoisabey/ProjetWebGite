@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style/index.css">
 
 
+
+
 </head>
     <body>
         <div>
@@ -17,13 +19,14 @@
 
             <H1>Figuiès</H1>
             <div class="head" id="log">
-                <a href="">langue</a>
+
                 <?php
                 session_start();
 
                 if (isset($_SESSION["loggedin"])) {
                     // Si l'utilisateur est connecté, affichez le bouton de déconnexion
-                    echo '<a href="php/logout.php">Logout</a>';
+                    echo '<a href="php/logout.php">Logout</a> 
+                            <a href="page/admin.php">admin</a>';
                 } else {
                     // Si l'utilisateur n'est pas connecté, affichez le bouton de connexion
                     echo '<a href="page/login.php">Login</a>';
