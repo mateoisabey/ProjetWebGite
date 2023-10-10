@@ -43,8 +43,8 @@
             <div class="section-background-Color1">
                 <div class="description">
                     <p>Notre maison en pierre, située sur les hauteurs, entre vignes, falaises et le causse vous séduira par sa vue magnifique et son environnement agréable.</p>
-                    <div class="diamond-background">
-                        <img id="diamond-button-description" class="diamond" src="./images/icon-arrow-down.svg" alt="Découvrir la description">
+                    <div id="diamond-button-description" class="diamond-background">
+                        <img class="diamond" src="./images/icon-arrow-down.svg" alt="Découvrir la description">
                     </div>
                     <div id="description-show" class="toggle-collapse">
                         <p>
@@ -121,8 +121,8 @@
                                 <p>Télévision</p>
                             </div>
                         </div>
-                        <div class="diamond-background">
-                            <img id="diamond-button-equipment" class="diamond" src="./images/icon-arrow-down.svg" alt="Découvrir la description">
+                        <div id="diamond-button-equipment" class="diamond-background">
+                            <img class="diamond" src="./images/icon-arrow-down.svg" alt="Découvrir la description">
                         </div>
                         <div id="equipment-show" class="toggle-collapse">
                             <div class="equipment-details-list">
