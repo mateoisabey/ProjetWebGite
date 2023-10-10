@@ -44,7 +44,8 @@ body {
 
 .section-background {
     height: 80vh;
-    background-size: 100% auto;
+    background-size: cover;
+    background-position: center;
     background-image: url("../images/background-image.jpg");
     display: flex;
     flex-direction: column;
