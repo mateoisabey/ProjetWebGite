@@ -9,7 +9,6 @@ body {
 }
 
 
-
 .button {
     background-color: blue;
     color: white;
@@ -63,7 +62,6 @@ body {
 }
 
 
-/* Todo: media queries !!! => padding */
 .section-background-Color1 {
     height: 100%;
     padding: 5% 25%;
@@ -149,7 +147,7 @@ body {
     margin-bottom: 15px;
 }
 
-.equipment-logo-and-text{
+.equipment-logo-and-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,10 +178,16 @@ body {
     display: inline-block;
 }
 
+.map {
+    width: 600px;
+    height: 400px;
+}
+
+
 h1 {
     margin-left: 10%;
     margin-top: 0.8em;
-    margin-bottom: 0;/* Supprimer les marges par défaut du titre */
+    margin-bottom: 0; /* Supprimer les marges par défaut du titre */
     text-align: center; /* Centrer le texte horizontalement */
     flex-grow: 1; /* Permet au titre de s'étendre pour remplir l'espace restant */
 }
