@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="./javascript/index.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
     <body>
         <div>

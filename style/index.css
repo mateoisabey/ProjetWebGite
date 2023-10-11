@@ -51,6 +51,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 768px){
+        height: 100vh;
+    }
 }
 
 .section-background p {
@@ -71,6 +75,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 768px){
+        padding: 5% 10%;
+    }
 }
 
 .section-background-Color2 {
@@ -81,6 +89,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 768px){
+        padding: 5% 10%;
+    }
 }
 
 /* Style pour le conteneur du header */
@@ -146,6 +158,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 15px;
+
+    @media screen and (max-width: 550px){
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
 .equipment-logo-and-text {
@@ -157,6 +174,14 @@ body {
 .equipment-details-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 425px){
+        grid-gap: 1em;
+    }
 }
 
 .little-logo {
