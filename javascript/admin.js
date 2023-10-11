@@ -35,3 +35,35 @@ function getdates() {
     xmlhttp.send();
 }
 
+function addRes() {
+    var titre = document.getElementById("titre").value;
+    var debut = document.getElementById("debut").value;
+    var fin = document.getElementById("fin").value;
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "../php/enregistrementRes.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                console.log("Réponse reçue avec succès : " + xhr.responseText);
+                // Traitez la réponse ici, si nécessaire
+            } else {
+                console.error("Une erreur s'est produite : " + xhr.status);
+                // Traitez les erreurs de la requête ici, si nécessaire
+                alert("Problème lors de l'enregistrement");
+            }
+        }
+    };
+
+    var data = "titre=" + encodeURIComponent(titre) + "&debut=" + encodeURIComponent(debut) + "&fin=" + encodeURIComponent(fin);
+
+    xhr.send(data);
+}
+
+
+
+
+
+

@@ -10,14 +10,13 @@ if (!$connexion) {
 $titre = mysqli_real_escape_string($connexion, $_POST['titre']);
 $debut = mysqli_real_escape_string($connexion, $_POST['debut']);
 $fin = mysqli_real_escape_string($connexion, $_POST['fin']);
-echo($titre);
 // Préparez la requête SQL pour insérer la réservation dans la table
 $sql = "INSERT INTO reservations (titre, debut, fin) VALUES ('$titre', '$debut', '$fin')";
 
 if (mysqli_query($connexion, $sql)) {
-    echo "La réservation a été enregistrée avec succès.";
+    echo "Réservation effectuer";
 } else {
-    echo "Erreur lors de l'enregistrement de la réservation : " . mysqli_error($connexion);
+    echo "Erreur lors de l'enregistrement de la réservation";
 }
 
 // Fermez la connexion à la base de données

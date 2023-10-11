@@ -29,6 +29,7 @@ if (mysqli_num_rows($result) == 1) {
 } else {
 
     echo "Nom d'utilisateur ou mot de passe incorrect.";
+    echo '<br><a href="../page/login.php">Recommancer</a>';
 }
 
 

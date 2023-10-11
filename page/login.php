@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="FR">
 <head>
   <title>Page de Connexion</title>
     <link rel="stylesheet" href="../style/login.css">
