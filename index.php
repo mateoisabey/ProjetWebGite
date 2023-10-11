@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="./javascript/index.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
     <body>
         <div>
@@ -154,10 +152,25 @@
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <h2 class="titre">Tarifs 2023</h2>
+                        <p><strong>- Semaine Moyenne saison</strong> à 550€</p>
+                        <p><strong>- Nuitée Moyenne saison</strong> à 85€</p>
+                        <p><strong>- Semaine Haute Saison</strong> à 650€</p>
+                        <p><strong>- Nuitée Haute Saison</strong> à 110€</p>
+                    </div>
+                    <div>
+                        <h2 class="titre">Moyens de paiment</h2>
+                        <div class="equipment-details">
+                            <p>Chèques</p>
+                            <p>Espèces</p>
+                            <p>Virements</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section-background-Color1">
-                <div id="map" style="width: 600px; height: 400px;"></div>
+                <div id="map" class="map"></div>
                 <script src="javascript/map.js"></script>
             </div>
         </section>
