@@ -174,6 +174,20 @@
                 <script src="javascript/map.js"></script>
             </div>
         </section>
+    <footer>
+        <div class="foot">
+            <img class="imgFoot" src="images/tel.png">
+            <p>+33(0) 6 41 57 73 20</p>
+        </div>
+        <div class="foot">
+            <img class="imgFoot" src="images/mail.png">
+            <p>beatrice.boyer29@orange.fr</p>
+        </div>
+        <div class="foot">
+            <img class="imgFoot" src="images/facebook.png">
+            <p>gitefiguies</p>
+        </div>
+    </footer>
 
     </body>
 </html>

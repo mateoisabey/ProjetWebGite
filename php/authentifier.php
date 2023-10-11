@@ -7,13 +7,15 @@ $connexion = mysqli_connect(SERVEUR, NOM, PASSE, BASE);
 if (!$connexion) {
     die("La connexion à la base de données a échoué : " . mysqli_connect_error());
 }
-
 $username = mysqli_real_escape_string($connexion, $_POST['username']);
 $password = mysqli_real_escape_string($connexion, $_POST['password']);
 
-$query = "SELECT * FROM utilisateurs WHERE nom_utilisateur='$username' AND mot_de_passe='$password'";
+$query = "SELECT * FROM utilisateurs WHERE nom_utilisateur=? AND mot_de_passe=?";
+$stmt = mysqli_prepare($connexion, $query);
+mysqli_stmt_bind_param($stmt, 'ss', $username, $password);
 
-$result = mysqli_query($connexion, $query);
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
 
 if (!$result) {
     die("Erreur dans la requête : " . mysqli_error($connexion));

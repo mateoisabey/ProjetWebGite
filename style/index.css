@@ -218,3 +218,26 @@ h1 {
     flex-grow: 1; /* Permet au titre de s'étendre pour remplir l'espace restant */
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #734444;;
+    color: #fff;
+
+    padding: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.imgFoot {
+    max-height: 1.3em;
+    max-width: 1.3em;
+    padding-top: 1em;
+    align-items: center;
+}
+
+.foot {
+    display: flex;
+}
