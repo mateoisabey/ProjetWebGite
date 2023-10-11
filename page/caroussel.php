@@ -1,8 +1,8 @@
 <div class="carousel">
+    <button id="prevBtn" onclick="changeSlide(-1)">Précédent</button>
     <div class="slide-container" id="imageContainer">
         <!-- Les images du carrousel seront chargées via AJAX -->
     </div>
-    <button id="prevBtn" onclick="changeSlide(-1)">Précédent</button>
     <button id="nextBtn" onclick="changeSlide(1)">Suivant</button>
     <?php
 

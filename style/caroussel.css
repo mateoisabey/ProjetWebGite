@@ -1,7 +1,16 @@
+.carousel {
+    display: flex;
+    flex-direction: row;
+}
+
 .carousel .slide-container {
     height: 80vh;
-    width: 100vw;
+    width: 80vw;
     display: flex;
+}
+
+.carousel button {
+    height: 15%;
 }
 
 .carousel img {
