@@ -41,6 +41,11 @@
                 <button class="button" type="button" onclick="">Réservez maintenant</button>
                 <p>À partir de 550€ / semaine</p>
             </div>
+            <div class="section-background-Color2">
+                <?php
+                include("page/caroussel.php");
+                ?>
+            </div>
             <div class="section-background-Color1">
                 <div class="description">
                     <p>Notre maison en pierre, située sur les hauteurs, entre vignes, falaises et le causse vous séduira par sa vue magnifique et son environnement agréable.</p>
@@ -173,10 +178,6 @@
                 <div id="map" class="map"></div>
                 <script src="javascript/map.js"></script>
             </div>
-
-            <?php
-            include("page/caroussel.php");
-            ?>
         </section>
 
     </body>

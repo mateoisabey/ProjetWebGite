@@ -23,5 +23,5 @@ if (isset($_SESSION["loggedin"])) {
           </form>';
 }
 ?>
-
+<link rel="stylesheet" href="style/caroussel.css">
 <script src="javascript/caroussel.js"></script>

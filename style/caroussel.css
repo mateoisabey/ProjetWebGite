@@ -1,0 +1,10 @@
+.carousel .slide-container {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+}
+
+.carousel img {
+    max-height: 100%;
+    margin: auto;
+}
