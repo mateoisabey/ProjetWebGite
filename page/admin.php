@@ -43,12 +43,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 include("caroussel.php");
 ?>
 
-
-
-
-
-
-
 </body>
 </html>
 

@@ -173,6 +173,10 @@
                 <div id="map" class="map"></div>
                 <script src="javascript/map.js"></script>
             </div>
+
+            <?php
+            include("page/caroussel.php");
+            ?>
         </section>
 
     </body>

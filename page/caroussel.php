@@ -1,7 +1,3 @@
-
-
-
-
 <div class="carousel">
     <div class="slide-container" id="imageContainer">
         <!-- Les images du carrousel seront chargées via AJAX -->
@@ -9,7 +5,6 @@
     <button id="prevBtn" onclick="changeSlide(-1)">Précédent</button>
     <button id="nextBtn" onclick="changeSlide(1)">Suivant</button>
     <?php
-    session_start();
 
     if (isset($_SESSION["loggedin"])) {
         echo '<button onclick="deleteImage()" id="deleteButton">Supprimer cette image</button>';
@@ -19,7 +14,6 @@
 </div>
 
 <?php
-session_start();
 
 if (isset($_SESSION["loggedin"])) {
     echo '<form action="../php/upload.php" method="post" enctype="multipart/form-data">
@@ -29,7 +23,5 @@ if (isset($_SESSION["loggedin"])) {
           </form>';
 }
 ?>
-
-
 
 <script src="javascript/caroussel.js"></script>
