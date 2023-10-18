@@ -9,7 +9,7 @@
         <!-- Les images du carrousel seront chargées via AJAX -->
     </div>
     <img id="nextBtn"
-         class="prevAndNextBtn"
+         class="prevAndNextBtn right"
          onclick="changeSlide(1)"
          src="./images/arrow-right.png"
          alt="Next image"
