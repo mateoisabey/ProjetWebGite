@@ -1,6 +1,6 @@
 <div class="carousel">
     <img id="prevBtn"
-         class="prevBtn"
+         class="prevAndNextBtn"
          onclick="changeSlide(-1)"
          src="./images/arrow-left.png"
          alt="Previous image"
@@ -9,7 +9,7 @@
         <!-- Les images du carrousel seront chargées via AJAX -->
     </div>
     <img id="nextBtn"
-         class="nextBtn"
+         class="prevAndNextBtn"
          onclick="changeSlide(1)"
          src="./images/arrow-right.png"
          alt="Next image"
