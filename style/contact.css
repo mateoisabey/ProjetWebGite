@@ -1,0 +1,71 @@
+.titre {
+    display: inline;
+}
+.titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #734444;;
+    color: #fff;
+    padding: 10px;
+}
+
+h1 {
+
+    margin-top: 0.8em;
+    margin-bottom: 0; /* Supprimer les marges par défaut du titre */
+    text-align: center; /* Centrer le texte horizontalement */
+    flex-grow: 1; /* Permet au titre de s'étendre pour remplir l'espace restant */
+}
+#titreMenu {
+    margin-left: 5%;
+}
+.head:first-child {
+    margin-right: auto;
+    display: flex; /* Ajouter une disposition flex */
+    align-items: center; /* Centrer verticalement le contenu */
+}
+
+/* Style pour les liens dans la deuxième div */
+.head a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    color: #734444;
+}
+body {
+    background-color: #734444;
+}
+section {
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/figuies-10.jpg");
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        max-width: 100%;
+    }
+}

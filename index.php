@@ -46,7 +46,7 @@
                 include("page/caroussel.php");
                 ?>
             </div>
-            <div class="section-background-Color1">
+            <div class="section-background-Color1" id="aPropos">
                 <div class="description">
                     <p>Notre maison en pierre, située sur les hauteurs, entre vignes, falaises et le causse vous séduira par sa vue magnifique et son environnement agréable.</p>
                     <div id="diamond-button-description" class="diamond-background">
@@ -97,8 +97,8 @@
                     </div>
                 </div>
             </div>
-            <div class="section-background-Color2">
-                <div class="section-equipment">
+            <div class="section-background-Color2" id="nosService">
+                <div class="section-equipment" >
                     <div>
                         <h2 class="titre">Capacité</h2>
                         <div class="equipment-details">
