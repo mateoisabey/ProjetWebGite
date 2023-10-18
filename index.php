@@ -177,6 +177,7 @@
             <div class="section-background-Color1">
                 <div id="map" class="map"></div>
                 <script src="javascript/map.js"></script>
+
             </div>
         </section>
     <footer>
