@@ -1,9 +1,19 @@
 <div class="carousel">
-    <button id="prevBtn" onclick="changeSlide(-1)">Précédent</button>
+    <img id="prevBtn"
+         class="prevBtn"
+         onclick="changeSlide(-1)"
+         src="./images/arrow-left.png"
+         alt="Previous image"
+    />
     <div class="slide-container" id="imageContainer">
         <!-- Les images du carrousel seront chargées via AJAX -->
     </div>
-    <button id="nextBtn" onclick="changeSlide(1)">Suivant</button>
+    <img id="nextBtn"
+         class="nextBtn"
+         onclick="changeSlide(1)"
+         src="./images/arrow-right.png"
+         alt="Next image"
+    />
     <?php
 
     if (isset($_SESSION["loggedin"])) {

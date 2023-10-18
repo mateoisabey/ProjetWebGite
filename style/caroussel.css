@@ -1,6 +1,7 @@
 .carousel {
     display: flex;
     flex-direction: row;
+    max-width: 100%;
 }
 
 .carousel .slide-container {
@@ -10,10 +11,36 @@
 }
 
 .carousel button {
-    height: 15%;
+    margin: auto 0;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: black;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    transition: transform 0.1s;
+    color: white;
+}
+
+.prevBtn {
+    background-color: #CCC;
+    border-radius: 50%;
+    padding: 0.5em;
+    transform: translate(25%);
+    filter: invert(100%);
+}
+
+.nextBtn {
+    background-color: #CCC;
+    border-radius: 50%;
+    padding: 0.5em;
+    transform: translate(-25%);
+    filter: invert(100%);
 }
 
 .carousel img {
     max-height: 100%;
+    max-width: 100%;
     margin: auto;
 }
