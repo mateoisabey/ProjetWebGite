@@ -190,7 +190,7 @@
             <p>beatrice.boyer29@orange.fr</p>
         </div>
         <div class="foot">
-            <img class="imgFoot" src="images/facebook.png">
+            <img class="imgFoot" id="facebook" src="images/facebook.png">
             <p>gitefiguies</p>
         </div>
     </footer>

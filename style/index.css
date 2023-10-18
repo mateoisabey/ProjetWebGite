@@ -232,10 +232,15 @@ footer {
 }
 
 .imgFoot {
-    max-height: 1.3em;
-    max-width: 1.3em;
+    height: 1.3em;
     padding-top: 1em;
-    align-items: center;
+    padding-right: 5px;
+
+}
+#facebook {
+    width: 1.8em;
+    height:  1.8em;
+    padding-top: 0.8em;
 }
 
 .foot {
