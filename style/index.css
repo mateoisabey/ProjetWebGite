@@ -52,7 +52,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
         height: 100vh;
     }
 }
@@ -76,7 +76,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
         padding: 5% 10%;
     }
 }
@@ -90,7 +90,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
         padding: 5% 10%;
     }
 }
@@ -159,7 +159,7 @@ body {
     justify-content: space-between;
     margin-bottom: 15px;
 
-    @media screen and (max-width: 550px){
+    @media screen and (max-width: 550px) {
         flex-wrap: wrap;
         flex-direction: column;
     }
@@ -175,11 +175,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 425px) {
         grid-gap: 1em;
     }
 }
@@ -224,11 +224,16 @@ footer {
     align-items: center;
     background-color: #734444;;
     color: #fff;
+    padding: 50px 200px;
 
-    padding: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
+    @media screen and (max-width: 1290px) {
+        padding: 50px 0;
+        justify-content: space-around;
+    }
 
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .imgFoot {
@@ -237,9 +242,10 @@ footer {
     padding-right: 5px;
 
 }
+
 #facebook {
     width: 1.8em;
-    height:  1.8em;
+    height: 1.8em;
     padding-top: 0.8em;
 }
 
