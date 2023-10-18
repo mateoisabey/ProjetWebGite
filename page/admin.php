@@ -39,11 +39,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 <div id="test-result"></div>
 
 
-
-
-
-
-
+<?php
+include("caroussel.php");
+?>
 
 </body>
 </html>
