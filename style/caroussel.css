@@ -1,19 +1,50 @@
 .carousel {
+    position: relative;
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    height: 70vh;
+    width: 100%;
 }
 
 .carousel .slide-container {
-    height: 80vh;
-    width: 80vw;
     display: flex;
 }
 
-.carousel button {
-    height: 15%;
+.prevAndNextBtn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1.5em;
+    height: auto;
+    background-color: #CCC;
+    border-radius: 50%;
+    padding: 0.5em;
+    transition: transform 0.1s ease-in-out;
+    translate: -1.25rem;
+    filter: invert(100%);
+    opacity: 0.8;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+        width: 1.5em;
+        height: auto;
+    }
 }
 
-.carousel img {
+.prevAndNextBtn.right {
+    right: 0;
+    left: initial;
+    translate: 1.25rem;
+}
+
+
+.slide-container img {
+    width: 100%;
     max-height: 100%;
     margin: auto;
+
+    @media screen and (max-width: 480px) {
+        height: auto;
+    }
 }
