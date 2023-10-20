@@ -1,17 +1,22 @@
+.carousel-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .carousel {
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: row;
     height: 70vh;
-    width: 100%;
 }
 
 .carousel .slide-container {
     display: flex;
 }
 
-.prevAndNextBtn {
+.prev-and-next-btn {
     position: absolute;
     top: 50%;
     left: 0;
@@ -32,7 +37,7 @@
     }
 }
 
-.prevAndNextBtn.right {
+.prev-and-next-btn.right {
     right: 0;
     left: initial;
     translate: 1.25rem;

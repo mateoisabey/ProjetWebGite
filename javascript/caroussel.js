@@ -64,3 +64,17 @@ function deleteImage() {
 
 
 loadImages();
+
+let i = 0;
+
+function repeatAction() {
+    console.log(i);
+    changeSlide(1);
+    i++;
+
+    if (i >= 50) {
+        clearInterval(interval);
+    }
+}
+
+const interval = setInterval(repeatAction, 5000);
