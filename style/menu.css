@@ -48,7 +48,7 @@ label {
 }
 #menu:checked ~ #wrap{
     transform: translate3d(0, 0, 0);
-    height: 500px;
+    height: 400px;
 }
 
 label>span{
