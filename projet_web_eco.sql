@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mer. 11 oct. 2023 à 10:29
+-- Généré le : ven. 20 oct. 2023 à 10:01
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -64,7 +64,8 @@ CREATE TABLE `reservations` (
 
 INSERT INTO `reservations` (`id`, `titre`, `debut`, `fin`) VALUES
 (16, 'Test', '2023-10-12 09:02:00', '2023-10-13 09:02:00'),
-(17, 'Test', '2023-10-17 09:42:00', '2023-10-18 09:42:00');
+(17, 'Test', '2023-10-17 09:42:00', '2023-10-18 09:42:00'),
+(18, 'Test', '2023-12-23 11:22:00', '2023-12-25 11:23:00');
 
 -- --------------------------------------------------------
 
@@ -74,7 +75,7 @@ INSERT INTO `reservations` (`id`, `titre`, `debut`, `fin`) VALUES
 
 CREATE TABLE `utilisateurs` (
   `nom_utilisateur` varchar(50) NOT NULL,
-  `mot_de_passe` varchar(50) NOT NULL
+  `mot_de_passe` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -82,7 +83,7 @@ CREATE TABLE `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`nom_utilisateur`, `mot_de_passe`) VALUES
-('Admin', 'motdepasse');
+('Admin', '$2y$10$.vGA1O9wmRjrwAVXD98HNOgsNpDczlqm3Jq7KnEd1rVAGv3Fykk1a');
 
 --
 -- Index pour les tables déchargées
@@ -120,7 +121,7 @@ ALTER TABLE `images`
 -- AUTO_INCREMENT pour la table `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
