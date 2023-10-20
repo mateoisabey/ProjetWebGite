@@ -38,11 +38,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 <div id="calendar" style="width: 600px; height: 400px;"></div>
 <div id="test-result"></div>
 
-
-<?php
-include("caroussel.php");
-?>
-
 </body>
 </html>
 

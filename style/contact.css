@@ -1,6 +1,7 @@
 .titre {
     display: inline;
 }
+
 .titre {
     display: flex;
     justify-content: space-between;
@@ -17,9 +18,11 @@ h1 {
     text-align: center; /* Centrer le texte horizontalement */
     flex-grow: 1; /* Permet au titre de s'étendre pour remplir l'espace restant */
 }
+
 #titreMenu {
     margin-left: 5%;
 }
+
 .head:first-child {
     margin-right: auto;
     display: flex; /* Ajouter une disposition flex */
@@ -43,8 +46,12 @@ h1 {
     margin: 20px;
     margin: auto;
     margin-top: 50px;
+    @media screen and (max-width: 380px) {
+        width: max-content;
+    }
 
 }
+
 
 .contact-info p {
     margin: 10px 0;
@@ -53,9 +60,11 @@ h1 {
 .contact-info strong {
     color: #734444;
 }
+
 body {
     background-color: #734444;
 }
+
 section {
     padding: 0;
     background-size: cover;
@@ -64,8 +73,10 @@ section {
     height: 100vh;
 }
 
-@media (max-width: 768px) {
-    .contact-info {
-        max-width: 100%;
-    }
+#calendar {
+    margin: 20px auto;
+    background-color: rgba(234, 153, 116, 0.61);
+    padding-bottom: 6%;
+    border: 2px solid rgba(195, 120, 87, 0.55);;
 }
+
