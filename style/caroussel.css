@@ -53,3 +53,32 @@
         height: auto;
     }
 }
+
+.admin-carousel-delete-image {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.admin-carousel-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 2em;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: #c37857;
+    color: white;
+}
+
+.admin-carousel-controls label {
+    width: 100%;
+    text-align: left;
+    text-wrap: wrap;
+    font-size: 1.2em;
+    color: white;
+}
+
+.admin-carousel-controls input {
+    text-wrap: wrap;
+}
