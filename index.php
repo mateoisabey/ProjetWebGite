@@ -38,7 +38,7 @@
         <section>
             <div class="section-background">
                 <!-- Todo: change the link -->
-                <button class="button" type="button" onclick=""><a href="page/contact.php">Réservez maintenant</a></button>
+                <button class="button" type="button" onclick=""><a id="reservationBtn" href="page/contact.php">Réservez maintenant</a></button>
                 <p>À partir de 550€ / semaine</p>
             </div>
             <div class="section-background-Color2">
