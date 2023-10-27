@@ -1,3 +1,7 @@
+* {
+    font-family: verdana, arial, sans-serif;
+}
+
 .titre {
     display: inline;
 }
@@ -75,8 +79,8 @@ section {
 
 #calendar {
     margin: 20px auto;
-    background-color: rgba(234, 153, 116, 0.61);
+    background-color: rgba(234, 153, 116, 1);
     padding-bottom: 6%;
-    border: 2px solid rgba(195, 120, 87, 0.55);;
+    border: 2px solid rgba(195, 120, 87, 0.8);;
 }
 

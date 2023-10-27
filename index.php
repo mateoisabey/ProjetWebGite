@@ -37,8 +37,7 @@
         </header>
         <section>
             <div class="section-background">
-                <!-- Todo: change the link -->
-                <button class="button" type="button" onclick=""><a id="reservationBtn" href="page/contact.php">Réservez maintenant</a></button>
+                <a class="reservation-button" id="reservationBtn" href="page/contact.php">Réservez maintenant</a>
                 <p>À partir de 550€ / semaine</p>
             </div>
             <div class="section-background-color2">
@@ -48,6 +47,7 @@
             </div>
             <div class="section-background-color1" id="aPropos">
                 <div class="description">
+                    <h2 class="titre">Description</h2>
                     <p>Notre maison en pierre, située sur les hauteurs, entre vignes, falaises et le causse vous séduira par sa vue magnifique et son environnement agréable.</p>
                     <div id="diamond-button-description" class="diamond-background">
                         <img class="diamond" src="./images/icon-arrow-down.svg" alt="Découvrir la description">
