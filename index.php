@@ -16,8 +16,8 @@
         ?>
         </div>
         <header class="titre">
+            <img id="logo" src="images/LOGO-final-fond-transparent.png" alt="Le Logo">
 
-            <H1>Figuiès</H1>
             <div class="head" id="log">
 
                 <?php

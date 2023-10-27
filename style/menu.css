@@ -42,6 +42,9 @@ a:hover {
     padding: 0 20px;
     display:inline-block;
     vertical-align:top;
+    @media screen and (max-width: 320px) {
+        width: 260px;
+    }
 }
 
 .nav {
@@ -63,6 +66,7 @@ label>span{
     display:block;
     font-size:48px;
     line-height:48px;
+
 
 }
 

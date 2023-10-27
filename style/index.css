@@ -108,6 +108,27 @@ body {
     padding: 10px;
 }
 
+
+#logo{
+    margin-left: 45%;
+    width: 8%;
+    height: 8%;
+    @media screen and (max-width: 768px) {
+        width: 10%;
+        height: 10%;
+    }
+    @media screen and (max-width: 425px) {
+        width: 16%;
+        height: 16%;
+    }
+    @media screen and (max-width: 320px) {
+        width: 20%;
+        height: 20%;
+    }
+
+}
+
+
 /* Style pour le container de la description */
 .description {
     display: flex;
@@ -197,6 +218,9 @@ body {
     margin-right: auto;
     display: flex; /* Ajouter une disposition flex */
     align-items: center; /* Centrer verticalement le contenu */
+    @media screen and (max-width: 320px) {
+        align-items: right;
+    }
 }
 
 /* Style pour les liens dans la deuxième div */
@@ -213,13 +237,7 @@ body {
 }
 
 
-h1 {
-    margin-left: 10%;
-    margin-top: 0.8em;
-    margin-bottom: 0; /* Supprimer les marges par défaut du titre */
-    text-align: center; /* Centrer le texte horizontalement */
-    flex-grow: 1; /* Permet au titre de s'étendre pour remplir l'espace restant */
-}
+
 
 footer {
     display: flex;
