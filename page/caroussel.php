@@ -15,19 +15,14 @@
              src="./images/arrow-right.png"
              alt="Next image"
         />
-        <?php
-
-        if (isset($_SESSION["loggedin"])) {
-            echo '<button onclick="deleteImage()" id="deleteButton">Supprimer cette image</button>';
-        }
-        ?>
     </div>
 
 
     <?php
-
     if (isset($_SESSION["loggedin"])) {
-        echo '<form action="php/upload.php" method="post" enctype="multipart/form-data">
+        echo '<button class="admin-carousel-delete-image" onclick="deleteImage()" id="deleteButton">Supprimer cette image</button>';
+
+        echo '<form class="admin-carousel-controls" action="../php/upload.php" method="post" enctype="multipart/form-data">
                 <label for="file">Sélectionnez une image à télécharger :</label>
                 <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png">
                 <input type="submit" name="submit" value="Télécharger">

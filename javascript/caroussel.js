@@ -72,9 +72,9 @@ function repeatAction() {
     changeSlide(1);
     i++;
 
-    if (i >= 50) {
+    if (i >= 80) {
         clearInterval(interval);
     }
 }
 
-const interval = setInterval(repeatAction, 5000);
+const interval = setInterval(repeatAction, 3000);
