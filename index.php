@@ -41,12 +41,12 @@
                 <button class="button" type="button" onclick=""><a id="reservationBtn" href="page/contact.php">Réservez maintenant</a></button>
                 <p>À partir de 550€ / semaine</p>
             </div>
-            <div class="section-background-Color2">
+            <div class="section-background-color2">
                 <?php
                 include("page/caroussel.php");
                 ?>
             </div>
-            <div class="section-background-Color1" id="aPropos">
+            <div class="section-background-color1" id="aPropos">
                 <div class="description">
                     <p>Notre maison en pierre, située sur les hauteurs, entre vignes, falaises et le causse vous séduira par sa vue magnifique et son environnement agréable.</p>
                     <div id="diamond-button-description" class="diamond-background">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-background-Color2" id="nosService">
+            <div class="section-background-color2" id="nosService">
                 <div class="section-equipment" >
                     <div>
                         <h2 class="titre">Capacité</h2>
@@ -174,7 +174,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-background-Color1">
+            <div class="section-background-color1">
                 <div id="map" class="map"></div>
                 <script src="javascript/map.js"></script>
 
@@ -182,15 +182,15 @@
         </section>
     <footer>
         <div class="foot">
-            <img class="imgFoot" src="images/tel.png">
+            <img class="img-footer" src="images/tel.png">
             <p>+33(0) 6 41 57 73 20</p>
         </div>
         <div class="foot">
-            <img class="imgFoot" src="images/mail.png">
+            <img class="img-footer" src="images/mail.png">
             <p>beatrice.boyer29@orange.fr</p>
         </div>
         <div class="foot">
-            <img class="imgFoot" id="facebook" src="images/facebook.png">
+            <img class="img-footer" id="facebook" src="images/facebook.png">
             <p>gitefiguies</p>
         </div>
     </footer>
