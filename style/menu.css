@@ -14,16 +14,12 @@
     transform: translate3d(-335px, 0, 0);
 }
 
-
-
 label {
     height: 44px;
     text-align: right;
     display: block;
     margin-right: -30px;
 }
-
-
 
 .link,
 label {
@@ -40,34 +36,36 @@ label {
     background: #734444;
     width: 360px;
     padding: 0 20px;
-    display:inline-block;
-    vertical-align:top;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .nav {
     padding: 25px;
 }
 
-#menu{
-    display:none;
+#menu {
+    display: none;
 }
-#menu:checked ~ #wrap{
+
+#menu:checked ~ #wrap {
     transform: translate3d(0, 0, 0);
     height: 400px;
 }
 
-label>span{
-    display:none;
+label > span {
+    display: none;
 }
-#menu:checked ~ #wrap label>span{
-    display:block;
-    font-size:48px;
-    line-height:48px;
+
+#menu:checked ~ #wrap label > span {
+    display: block;
+    font-size: 48px;
+    line-height: 48px;
 
 }
 
-#menu:checked ~ #wrap label>svg{
-    display:none;
+#menu:checked ~ #wrap label > svg {
+    display: none;
 }
 
 

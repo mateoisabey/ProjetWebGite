@@ -216,7 +216,7 @@ body {
     display: flex; /* Ajouter une disposition flex */
     align-items: center; /* Centrer verticalement le contenu */
     @media screen and (max-width: 320px) {
-        align-items: right;
+        align-items: end;
     }
 }
 
