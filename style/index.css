@@ -2,14 +2,9 @@
     font-family: verdana, arial, sans-serif;
 }
 
-.titre {
-    display: inline;
-}
-
 body {
     margin: 0;
     overflow-x: hidden;
-
 }
 
 .primary-button {
@@ -108,7 +103,7 @@ body {
     align-items: center;
     background-color: #734444;;
     color: #fff;
-    padding: 10px;
+    padding: 20px 10px;
 }
 
 

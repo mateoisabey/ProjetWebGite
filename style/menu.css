@@ -1,6 +1,8 @@
 .menu {
     position: fixed;
     z-index: 9999;
+    top: 0;
+    left: 0;
 }
 
 #wrap {
@@ -12,6 +14,14 @@
     transition: transform .4s cubic-bezier(.25, .1, .25, .1), height 0.4s ease-in-out;
     height: 80px;
     transform: translate3d(-335px, 0, 0);
+
+    @media screen and (max-width: 480px) {
+        transform: translate3d(-275px, 0, 0);
+    }
+
+    @media screen and (max-width: 375px) {
+        transform: translate3d(-225px, 0, 0);
+    }
 }
 
 label {
@@ -35,9 +45,17 @@ label {
 .header {
     background: #734444;
     width: 360px;
-    padding: 0 20px;
+    padding: 0 30px 0 20px;
     display: inline-block;
     vertical-align: top;
+
+    @media screen and (max-width: 480px) {
+        width: 300px;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 250px;
+    }
 }
 
 .nav {
@@ -61,11 +79,8 @@ label > span {
     display: block;
     font-size: 48px;
     line-height: 48px;
-
 }
 
 #menu:checked ~ #wrap label > svg {
     display: none;
 }
-
-
