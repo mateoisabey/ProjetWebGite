@@ -77,4 +77,4 @@ function repeatAction() {
     }
 }
 
-const interval = setInterval(repeatAction, 3000);
+const interval = setInterval(repeatAction, 6000);
