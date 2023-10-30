@@ -12,9 +12,8 @@ body {
 
 }
 
-.reservation-button {
+.primary-button {
     background-color: #A095D1;
-    color: white;
     display: inline-block;
     text-decoration: none;
     white-space: nowrap;
@@ -23,21 +22,28 @@ body {
     line-height: 1.5;
     border-radius: 0.25rem;
     transition: 0.5s;
+    border: none;
 }
 
-.reservation-button:hover {
+.primary-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.primary-button:hover {
     padding-right: 40px;
     transition: 0.5s;
 }
 
-.reservation-button::after {
+.primary-button::after {
     content: '\00bb';
+    color: white;
     position: absolute;
     opacity: 0;
     transition: 0.5s;
 }
 
-.reservation-button:hover::after {
+.primary-button:hover::after {
     opacity: 1;
     margin-left: 15px;
 }
