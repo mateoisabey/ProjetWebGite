@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../style/contact.css">
     <script src="../javascript/admin.js"></script>
 </head>
-<body onload="getdates()">
+<body class="contact-body" onload="getdates()">
 <header class="titre">
     <H1 id="titreMenu">Figuiès</H1>
     <div class="head" id="log">
@@ -20,14 +20,12 @@
 <section>
     <h1>Contactez-nous</h1>
     <div class="contact-info">
-
         <p><strong>Nom de l'entreprise :</strong> Gîte des figuier</p>
         <p><strong>Téléphone :</strong> +33(0) 6 41 57 73 20</p>
         <p><strong>Email :</strong> beatrice.boyer29@orange.fr</p>
-
     </div>
     <h1>Disponibilité :</h1>
-    <div id="calendar" style="width: 600px; height: 400px;"></div>
+    <div class="calendar" id="calendar"></div>
 </section>
 </body>
 </html>

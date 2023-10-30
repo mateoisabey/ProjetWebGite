@@ -2,8 +2,8 @@
     font-family: verdana, arial, sans-serif;
 }
 
-.titre {
-    display: inline;
+.contact-body {
+    margin: 0;
 }
 
 .titre {
@@ -16,11 +16,10 @@
 }
 
 h1 {
-
     margin-top: 0.8em;
-    margin-bottom: 0; /* Supprimer les marges par défaut du titre */
-    text-align: center; /* Centrer le texte horizontalement */
-    flex-grow: 1; /* Permet au titre de s'étendre pour remplir l'espace restant */
+    margin-bottom: 0;
+    text-align: center;
+    flex-grow: 1;
 }
 
 #titreMenu {
@@ -29,11 +28,10 @@ h1 {
 
 .head:first-child {
     margin-right: auto;
-    display: flex; /* Ajouter une disposition flex */
-    align-items: center; /* Centrer verticalement le contenu */
+    display: flex;
+    align-items: center;
 }
 
-/* Style pour les liens dans la deuxième div */
 .head a {
     color: #fff;
     text-decoration: none;
@@ -47,15 +45,12 @@ h1 {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
-    margin: 20px;
-    margin: auto;
-    margin-top: 50px;
+    margin: 25px auto;
+
     @media screen and (max-width: 380px) {
         width: max-content;
     }
-
 }
-
 
 .contact-info p {
     margin: 10px 0;
@@ -74,13 +69,13 @@ section {
     background-size: cover;
     background-position: center;
     background-image: url("../images/figuies-10.jpg");
-    height: 100vh;
 }
 
-#calendar {
+.calendar {
+    width: 600px;
+    height: auto;
     margin: 20px auto;
     background-color: rgba(234, 153, 116, 1);
     padding-bottom: 6%;
     border: 2px solid rgba(195, 120, 87, 0.8);;
 }
-
