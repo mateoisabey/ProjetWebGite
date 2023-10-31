@@ -84,3 +84,7 @@ label > span {
 #menu:checked ~ #wrap label > svg {
     display: none;
 }
+
+#wrap svg,span {
+    cursor: pointer;
+}
