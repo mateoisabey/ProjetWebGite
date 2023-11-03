@@ -30,10 +30,6 @@ if (mysqli_num_rows($result) == 1) {
         $_SESSION["username"] = $username;
         header("Location: ../page/admin.php");
     } else {
-        echo ($password);
-        echo "<br>";
-        echo ($hashed_password);
-        echo "Nom d'utilisateur ou mot de passe incorrect.";
         echo "Nom d'utilisateur ou mot de passe incorrect.";
         echo '<br><a href="../page/login.php">Recommencer</a>';
     }

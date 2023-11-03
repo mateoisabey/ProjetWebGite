@@ -180,15 +180,15 @@
 </section>
 <footer>
     <div class="foot">
-        <img class="img-footer" src="images/tel.png">
+        <img class="img-footer" src="images/tel.png" alt="logo-telephone">
         <p>+33(0) 6 41 57 73 20</p>
     </div>
     <div class="foot">
-        <img class="img-footer" src="images/mail.png">
+        <img class="img-footer" src="images/mail.png" alt="logo-mail">
         <p>beatrice.boyer29@orange.fr</p>
     </div>
     <div class="foot">
-        <img class="img-footer" id="facebook" src="images/facebook.png">
+        <img class="img-footer" id="facebook" src="images/facebook.png" alt="logo-facebook">
         <p>gitefiguies</p>
     </div>
 </footer>

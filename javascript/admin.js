@@ -27,7 +27,6 @@ function getdates() {
                 callback(events);
             });
 
-            // Rafraîchissez le calendrier pour afficher les nouvelles données
             $('#calendar').fullCalendar('refetchEvents');
         }
     };
@@ -48,10 +47,8 @@ function addRes() {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 console.log("Réponse reçue avec succès : " + xhr.responseText);
-                // Traitez la réponse ici, si nécessaire
             } else {
                 console.error("Une erreur s'est produite : " + xhr.status);
-                // Traitez les erreurs de la requête ici, si nécessaire
                 alert("Problème lors de l'enregistrement");
             }
         }

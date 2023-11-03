@@ -2,7 +2,6 @@
 session_start();
 
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    // Redirigez l'utilisateur vers la page de connexion s'il n'est pas authentifié
     header("Location: login.php");
     exit;
 }

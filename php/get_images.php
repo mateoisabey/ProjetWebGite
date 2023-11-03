@@ -15,7 +15,6 @@ if ($result->num_rows > 0) {
     }
 }
 
-// Fermez la connexion à la base de données
 $connexion->close();
 
 header('Content-Type: application/json');
