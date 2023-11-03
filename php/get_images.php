@@ -11,7 +11,9 @@ $images = array();
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        $images[] = array('id' => $row["id"], 'image_data' => base64_encode($row["image_data"]));
+        $imageData = base64_decode($row["image_data"]);
+
+        $images[] = array('id' => $row["id"], 'image_data' => $imageData);
     }
 }
 
