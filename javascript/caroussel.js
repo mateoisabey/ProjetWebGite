@@ -82,7 +82,6 @@ function deleteImage() {
 let i = 0;
 
 function repeatAction() {
-    console.log(i);
     changeSlide(1);
     i++;
 
